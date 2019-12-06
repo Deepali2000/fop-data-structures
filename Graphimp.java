@@ -13,22 +13,30 @@ import java.util.*;
             }
             return false;
         }
+
+        
         void print()
         {
             System.out.println(graph.keySet());
+            for(Integer Key:graph.keySet())
+            {
+                System.out.println("Adjacenecy List for Node: "+key);
+                System.out.println();
+            }
         }
 
 
  }
 public class Graphimp{
 
-public static void  main(String[] args){
-    Graphsm g= new Graphsm();
-    g.addVertex(0);
-    g.addVertex(1);
-    g.addVertex(2);
-    g.print();
-}
+public static void  main(String[] args)
+        {
+            Graphsm g= new Graphsm();
+            g.addVertex(0);
+            g.addVertex(1);
+            g.addVertex(2);
+            g.print();
+        }
 
 
 }
