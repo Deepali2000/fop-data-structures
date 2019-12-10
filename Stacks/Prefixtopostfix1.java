@@ -24,6 +24,10 @@ class Prefixtopostfix1
 
         int length = pre_exp.length(); 
 
+
+
+
+        .
         for (int i = length - 1; i >= 0; i--)  
         { 
         if (isOperator(pre_exp.charAt(i)))  

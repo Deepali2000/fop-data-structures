@@ -3,7 +3,6 @@ import java.util.Stack;
 
 class Infixpostfix1
 {
-
     static int Prec(char ch)
     { 
         switch (ch) 
@@ -45,12 +44,13 @@ class Infixpostfix1
                 }
                 else
                 {
-                    while(!st.isEmpty()&&Prec(c)<=Prec(st.peek())){
+                    while(!st.isEmpty()&&Prec(c)<=Prec(st.peek()))
+                    {
                     if(st.peek()=='(')
                     return "Invalid Expression";
                     result +=st.pop();
-                }
-                st.push(c);
+                     }
+                    st.push(c);
 
                 }
 
