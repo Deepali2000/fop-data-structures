@@ -21,6 +21,6 @@ public static void main(String args[])
     {
         max+=st[j];
     }
-    System.out.println("max element formed is"+max);
+    System.out.println("max element formed is " +max);
 }
 }
