@@ -11,16 +11,16 @@ public class ReverseList {
         }  
     }  
     public Node head = null;  
-   // public Node tail = null;  
+    public Node tail = null;  
     public void addNode(int data) {  
         Node newNode = new Node(data);  
           if(head == null) {  
             head = newNode;  
-         //   tail = newNode;  
+            tail = newNode;  
         }  
         else {  
-            //tail.next = newNode;  
-            //tail = newNode;  
+            tail.next = newNode;  
+            tail = newNode;  
         }  
     }  
     public void reverse(Node current) {  
