@@ -7,7 +7,7 @@ public class detect
 	{
 		int data ;Node next;
 		Node(int d)
-		{
+		{ 
 			data=d;
 			next=null;
 		}

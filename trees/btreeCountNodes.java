@@ -1,4 +1,5 @@
 
+import java .util.*;
 class Node
 {
     int data;
@@ -21,9 +22,18 @@ class BinaryTree{
     {
         this.root=new Node(data);
     }
+    int count(Node head)
+     {
+        
+        if(head==null)
+        {
+            return 0;
+        }
+        return 1+count(head.left)+count(head.right);
+    }
 }
 
-class btree{
+class btreeCountNodes{
     public static void main(String[] args) {
 
         BinaryTree bt=new BinaryTree(2);
@@ -31,6 +41,6 @@ class btree{
         bt.root.right=new Node(5);
         bt.root.left.right=new Node(9);
         bt.root.right.left=new Node(7);
-        
+        System.out.println(bt.count(bt.root));
     }
 }
